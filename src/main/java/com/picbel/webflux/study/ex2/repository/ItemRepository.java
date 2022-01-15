@@ -9,11 +9,11 @@ import reactor.core.publisher.Flux;
 public interface ItemRepository extends ReactiveCrudRepository<Item, String>, ReactiveQueryByExampleExecutor<Item> {
     Flux<Item> findByNameContaining(String partialName);
 
-	@Query("{ 'name' : ?0, 'age' : ?1 }")
-	Flux<Item> findItemsForCustomerMonthlyReport(String name, int age);
-
-	@Query(sort = "{ 'age' : -1 }")
-	Flux<Item> findSortedStuffForWeeklyReport();
+//	@Query("{ 'name' : ?0, 'age' : ?1 }")
+//	Flux<Item> findItemsForCustomerMonthlyReport(String name, int age);
+//
+//	@Query(sort = "{ 'age' : -1 }")
+//	Flux<Item> findSortedStuffForWeeklyReport();
 
     // search by name
     Flux<Item> findByNameContainingIgnoreCase(String partialName);
