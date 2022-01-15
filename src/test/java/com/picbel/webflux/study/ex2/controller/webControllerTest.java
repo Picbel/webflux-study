@@ -14,7 +14,7 @@ import static org.springframework.http.MediaType.TEXT_HTML;
 @Disabled("pom.xml에서 blockhound-junit-platform 의존 관계를 제거한 후에 실행해야 성공한다.")
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT) //<1>
 @AutoConfigureWebTestClient // <2>
-class HomeControllerTest {
+class webControllerTest {
     @Autowired
     WebTestClient client; // <3>
 
