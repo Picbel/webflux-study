@@ -8,16 +8,19 @@ import com.picbel.webflux.study.ex2.repository.ItemRepository;
 import com.picbel.webflux.study.ex2.service.CartService;
 import com.picbel.webflux.study.ex2.service.InventoryService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.result.view.Rendering;
 import reactor.core.publisher.Mono;
 
+import java.net.URI;
+
 @Controller
 @RequiredArgsConstructor
 public class HomeController {
 
-//    private final ItemRepository itemRepository;
+    private final ItemRepository itemRepository;
 //    private final CartRepository cartRepository;
 
 //    private final CartService cartService;

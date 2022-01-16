@@ -147,4 +147,11 @@ public class InventoryService {
                 .flatMap(cart -> this.cartRepository.save(cart));
     }
 
+    public Flux<Cart> getAllCarts() {
+        return this.cartRepository.findAll();
+    }
+
+    public Mono<Cart> newCart() {
+        return this.cartRepository.save(new Cart("cart"));
+    }
 }
