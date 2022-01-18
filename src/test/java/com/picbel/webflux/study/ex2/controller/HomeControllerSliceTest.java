@@ -3,6 +3,8 @@ package com.picbel.webflux.study.ex2.controller;
 import com.picbel.webflux.study.ex2.domain.Cart;
 import com.picbel.webflux.study.ex2.domain.Item;
 import com.picbel.webflux.study.ex2.service.InventoryService;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
@@ -14,6 +16,7 @@ import reactor.core.publisher.Mono;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
+@Disabled
 @WebFluxTest(HomeController.class)
 class HomeControllerSliceTest {
     @Autowired

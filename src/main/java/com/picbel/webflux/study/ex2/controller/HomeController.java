@@ -20,7 +20,7 @@ import java.net.URI;
 @RequiredArgsConstructor
 public class HomeController {
 
-    private final ItemRepository itemRepository;
+//    private final ItemRepository itemRepository;
 //    private final CartRepository cartRepository;
 
 //    private final CartService cartService;
